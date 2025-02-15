@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+:root {
+  --span-color: #5c4eae;
+  --section-title-color: #5c4eae;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 96px;
+  /* border: 2px solid blue; */
+  max-width: 1600px;
+  /* background: #F9F9F9; */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  /* width: 1248px; */
+  height: 62px;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 105px;
+}
+
+.logo-nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.logo-nav ul li a {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 17.83px;
+  line-height: 26.74px;
+  letter-spacing: 0%;
+  color: #606060;
+}
+
+.login {
+  width: 102px;
+  height: 62px;
+  border: none;
+
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 17.83px;
+  color: #606060;
+  /* background-color: white; */
+  background: #f9f9f9;
+
+  cursor: pointer;
+}
+
+.singup {
+  width: 122px;
+  height: 62px;
+  border: none;
+  border-radius: 18px;
+  background: #6c5fbc;
+
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 17.83px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.login:hover {
+  border-radius: 18px;
+  background-color: #6c5fbc;
+  transition: 0.5s all ease-in;
+  color: #f9f9f9;
+}
+.singup:hover {
+  border-radius: 18px;
+  background-color: #544899;
+  transition: 0.5s all ease-in;
+  color: white;
+}
+
+hr {
+  margin-top: 25px;
+  border: 1px solid #cbcbcb;
+}
+/* hero */
+
+.hero-section-ct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border: 2px solid red; */
+}
+
+.hero-info {
+  max-width: 568px;
+}
+
+.hero-info p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 15px;
+  color: #201f1f33;
+}
+
+.hero-info h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 4rem;
+  color: #201f1f;
+  margin: 20px 0px 18px 0px;
+}
+
+.hero-info h1 span {
+  color: #6c5fbc;
+}
+
+.hero-info h4 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  color: #676767;
+}
+
+.hero-info h4 span {
+  color: #6c5fbc;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 18px;
+  margin: 50px 0px 35px 0;
+}
+
+.hero-btn__1 {
+  width: 156;
+  height: 59;
+  border: none;
+  border-radius: 12.41px;
+  background-color: #5c4eae;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16.27px;
+  color: white;
+}
+.hero-btn__2 {
+  width: 105px;
+  height: 59px;
+  border: 1.5px solid #6c5fbc;
+  border-radius: 12.41px;
+  background-color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16.27px;
+  color: #6c5fbc;
+}
+
+.hero-img img {
+  width: 604px; /* Kontainer kengligidan oshib ketmaslik uchun */
+  height: auto;
+}
+
+/* stats */
+
+.stats {
+  background-image: url(../images/imgs/BG.png);
+  margin-top: 70px;
+}
+
+.stats-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 220px;
+  gap: 60px;
+}
+
+.br {
+  border-right: 1px solid #5c5c5c;
+  border-left: 1px solid #5c5c5c;
+  padding: 0 60px 0 60px;
+}
+
+.stat-item h2 {
+  font-family: Public Sans;
+  font-weight: 700;
+  font-size: 43.2px;
+  color: white;
+}
+
+.stat-item p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14.4px;
+  color: #cbd5e1;
+}
+
+/* download  */
+
+.down-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 745px;
+  gap: 200px;
+  border-bottom: 1px solid #cbcbcb;
+  margin-top: 100px;
+  margin-bottom: 550px;
+}
+
+.left-img {
+  align-self: flex-start;
+}
+
+.right-info h1 {
+  max-width: 560px;
+  height: 117;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 50.92px;
+  margin-bottom: 65px;
+}
+.right-info h1 span {
+  color: #6c5fbc;
+}
+
+.rec li {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20.33px;
+  max-width: 548px;
+  height: 61px;
+  color: #676767;
+  margin-bottom: 30px;
+}
+
+.down-btn {
+  display: flex;
+  align-items: center;
+  width: 335px;
+  height: 165px;
+}
+
+.down-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 186px;
+  height: 63px;
+  border-radius: 15px;
+  background: #6c5fbc;
+  color: white;
+  border: none;
+}
+.mg {
+  margin-top: 50px;
+}
+
+/* media  */
+/* Katta ekranlar uchun */
+@media (max-width: 1190px) {
+  .hero-info {
+    max-width: 400px;
+  }
+
+  .hero-img img {
+    max-width: 484px;
+    height: auto;
+  }
+
+  .hero-info h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero-info {
+    max-width: 300px;
+  }
+  .hero-info h1 {
+    font-size: 30px;
+  }
+
+  .hero-img {
+    min-width: 300px;
+  }
+
+  .hero-img img {
+    max-width: 100%; /* Kontainerga to‘liq moslashish */
+    height: auto;
+  }
+}
