@@ -1,0 +1,63 @@
+.autoBlur {
+    animation: autoBlurAnimation  linear both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+        opacity: 0;
+    }
+    35%, 65% {
+        filter: blur(0);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
+
+
+/* auto display animation */
+
+.autoDisplay {
+    animation: autoDisplayAnimation  both;
+    animation-timeline: view();
+}
+
+@keyframes autoDisplayAnimation {
+    from{
+        filter: blur(10px);
+        transform: translateY(-120px) scale(0);
+        opacity: 0.2;
+    }
+    50%{
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* right fadein */
+
+.fadeinRight {
+    animation: fadeInAnimation both;
+    animation-timeline: view();
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        filter: blur(20px);
+        opacity: 0;
+        transform: translateX(-500px) scale(0.2);
+    }
+    35%, 65% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    100% {
+        filter: blur(20px);
+    }
+}

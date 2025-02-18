@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
     <title>Eatly</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
                 <a href="#">Blog</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="#top">Pricing</a>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -42,7 +43,7 @@
     <section class="hero-section" id="hero-section">
       <div class="container">
         <div class="hero-section-ct">
-          <div class="hero-info">
+          <div class="hero-info autoBlur">
             <p>----OVER 1000 USERS</p>
             <h1>Enjoy Foods All Over The <span>World</span></h1>
             <h4>
@@ -56,7 +57,7 @@
             </div>
             <img src="./images/imgs/Trust Reviews.png" alt="" />
           </div>
-          <div class="hero-img">
+          <div class="hero-img autoBlur">
             <img src="./images/imgs/Hero.png" alt="" />
           </div>
         </div>
@@ -66,16 +67,16 @@
 
     <!-- statistic -->
     <section class="stats" id="stats">
-      <div class="stats-section">
-        <div class="stat-item">
+      <div class="stats-section autoBlur">
+        <div class="stat-item fadeinRight">
           <h2>10K+</h2>
           <p>Satisfied Customers<br />All Over The World</p>
         </div>
-        <div class="stat-item br">
+        <div class="stat-item br fadeinRight">
           <h2>4M</h2>
           <p>Healthy Dishes Sold<br />Including Milk Shakes Smooth</p>
         </div>
-        <div class="stat-item">
+        <div class="stat-item fadeinRight">
           <h2>99.99%</h2>
           <p>Reliable Customer Support<br />We Provide Great Experiences</p>
         </div>
@@ -87,14 +88,17 @@
     <section class="download" id="download">
       <div class="container">
         <div class="down-section">
-          <div class="left-img">
+          <div class="left-img autoBlur fadeinRight">
             <img src="./images/imgs/Mobile.png" alt="" />
           </div>
 
-          <div class="right-info">
-            <h1>Premium <span>Quality</span> <br> For Your Health</h1>
+          <div class="right-info autoBlur">
+            <h1 class="">
+              Premium <span>Quality</span> <br />
+              For Your Health
+            </h1>
 
-            <div class="rec">
+            <div class="rec fadeinRight">
               <li>
                 Premium quality food is made with ingredients that <br />
                 are packed with essential vitamins, minerals.
@@ -117,6 +121,254 @@
       </div>
     </section>
     <!-- download section -->
+
+    <!-- Our Top Restaurants -->
+    <section class="top" id="top">
+      <div class="container">
+        <div class="top-ct">
+          <div class="top-title autoDisplay">
+            <h1>Our Top <span>Restaurants</span></h1>
+          </div>
+
+          <div class="top-cards autoDisplay">
+            <div class="top-card">
+              <div class="top-img">
+                <img src="./images/imgs/top-1.png" alt="" />
+              </div>
+              <div class="top-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="card-info__ct">
+                <div class="card-info">
+                  <h1>The Chicken King</h1>
+                  <div>
+                    <p>24min •</p>
+                    <img src="./images/icon/Star.png" alt="" />
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="./images/icon/Bookmark.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="top-card">
+              <div class="top-img">
+                <img src="./images/imgs/top-2.png" alt="" />
+              </div>
+              <div class="top-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="card-info__ct">
+                <div class="card-info">
+                  <h1>The Chicken King</h1>
+                  <div>
+                    <p>24min •</p>
+                    <img src="./images/icon/Star.png" alt="" />
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="./images/icon/Bookmark.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="top-card">
+              <div class="top-img">
+                <img src="./images/imgs/top-1.png" alt="" />
+              </div>
+              <div class="top-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="card-info__ct">
+                <div class="card-info">
+                  <h1>The Chicken King</h1>
+                  <div>
+                    <p>24min •</p>
+                    <img src="./images/icon/Star.png" alt="" />
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="bookmark">
+                  <img src="./images/icon/Bookmark.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-all">
+            <a href="#">View All</a>
+            <img src="./images/icon/right-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Top Restaurants -->
+
+    <!-- Our Top dishes -->
+    <section class="dishes" id="dishes">
+      <div class="container">
+        <div class="dishes-ct">
+          <div class="top-title autoDisplay">
+            <h1>Our Top <span>Restaurants</span></h1>
+          </div>
+
+          <div class="dishes-cards">
+            <div class="dishes-card">
+              <div class="dishes-img">
+                <img
+                  class="dishes-imgs"
+                  src="./images/imgs/Food Image1.png"
+                  alt=""
+                />
+                <div class="heart">
+                  <img src="./images/icon/Heart.png" alt="" />
+                </div>
+              </div>
+              <div class="dishes-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="dishes-info__ct">
+                <div class="dishes-card__info">
+                  <h1>Chicken Hell</h1>
+                  <div>
+                    <p>14min •</p>
+                    <img class="star" src="./images/icon/Star.png" alt="" />
+                    <p>4.9</p>
+                  </div>
+                  <div class="price-add">
+                    <h2>$12.<span>99</span></h2>
+                    <img src="./images/icon/Add.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dishes-card">
+              <div class="dishes-img">
+                <img
+                  class="dishes-imgs"
+                  src="./images/imgs/Food Image2.png"
+                  alt=""
+                />
+                <div class="heart">
+                  <img src="./images/icon/Heart.png" alt="" />
+                </div>
+              </div>
+              <div class="dishes-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="dishes-info__ct">
+                <div class="dishes-card__info">
+                  <h1>Chicken Hell</h1>
+                  <div>
+                    <p>14min •</p>
+                    <img class="star" src="./images/icon/Star.png" alt="" />
+                    <p>4.9</p>
+                  </div>
+                  <div class="price-add">
+                    <h2>$12.<span>99</span></h2>
+                    <img src="./images/icon/Add.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dishes-card">
+              <div class="dishes-img">
+                <img
+                  class="dishes-imgs"
+                  src="./images/imgs/Food Image3.png"
+                  alt=""
+                />
+                <div class="heart">
+                  <img src="./images/icon/Heart.png" alt="" />
+                </div>
+              </div>
+              <div class="dishes-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="dishes-info__ct">
+                <div class="dishes-card__info">
+                  <h1>Chicken Hell</h1>
+                  <div>
+                    <p>14min •</p>
+                    <img class="star" src="./images/icon/Star.png" alt="" />
+                    <p>4.9</p>
+                  </div>
+                  <div class="price-add">
+                    <h2>$12.<span>99</span></h2>
+                    <img src="./images/icon/Add.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dishes-card">
+              <div class="dishes-img">
+                <img
+                  class="dishes-imgs"
+                  src="./images/imgs/Food Image2.png"
+                  alt=""
+                />
+                <div class="heart">
+                  <img src="./images/icon/Heart.png" alt="" />
+                </div>
+              </div>
+              <div class="dishes-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="dishes-info__ct">
+                <div class="dishes-card__info">
+                  <h1>Chicken Hell</h1>
+                  <div>
+                    <p>14min •</p>
+                    <img class="star" src="./images/icon/Star.png" alt="" />
+                    <p>4.9</p>
+                  </div>
+                  <div class="price-add">
+                    <h2>$12.<span>99</span></h2>
+                    <img src="./images/icon/Add.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dishes-card">
+              <div class="dishes-img">
+                <img
+                  class="dishes-imgs"
+                  src="./images/imgs/Food Image4.png"
+                  alt=""
+                />
+                <div class="heart">
+                  <img src="./images/icon/Heart.png" alt="" />
+                </div>
+              </div>
+              <div class="dishes-cards-helth">
+                <p>Healthy</p>
+              </div>
+              <div class="dishes-info__ct">
+                <div class="dishes-card__info">
+                  <h1>Chicken Hell</h1>
+                  <div>
+                    <p>14min •</p>
+                    <img class="star" src="./images/icon/Star.png" alt="" />
+                    <p>4.9</p>
+                  </div>
+                  <div class="price-add">
+                    <h2>$12.<span>99</span></h2>
+                    <img src="./images/icon/Add.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-all">
+            <a href="#">View All</a>
+            <img src="./images/icon/right-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Top Restaurants -->
 
     <!-- java script -->
     <script src="./javascripts/main.js"></script>
